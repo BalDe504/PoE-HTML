@@ -1,5 +1,8 @@
 body{
-background-color: violet;
+background-image: url("background.png");
+background-color: #0c6b0b;
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 .bottom_bar{
@@ -127,18 +130,21 @@ background-color: violet;
 }
 
 .shop_button{
-    width:30%;
+    width:40%;
     height:40%;
-    background-color: green;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding:0;
 }
 
 .info{
     width: 15%;
     height:40%;
-    background-color: orange;
+    background-color: rgb(173, 114, 3);
+    color: #0f0f0f;
+    font-weight: bold;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -147,7 +153,6 @@ background-color: violet;
 .menu_button{
     width:100%;
     height:50%;
-    background-color: green;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -157,13 +162,82 @@ background-color: violet;
 .button1{
     width: 100%;
     height: 100%;
-    margin: 0;
-    background-color: transparent;
+    background-color: #0c6b0b;
+    color: #0f0f0f;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.button1:hover,
+.button1:active{
+    background-color: #b1080c;
+    color:#afbb1b;
+    cursor: pointer;
 }
 
 .shop_button1{
     width: 100%;
     height: 100%;
-    margin: 0;
-    background-color: transparent;
+    background-color: #0c6b0b;
+    color: #0f0f0f;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.shop_button1:hover,
+.shop_button1:active{
+    background-color: #b1080c;
+    color:#afbb1b;
+    cursor: pointer;
+}
+
+.modal1{
+    display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width:100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-modal-content{
+    background-color: brown;
+    width:15%;
+    height: 30%;
+    margin: 15% auto;
+    padding: 20px;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.close-menu{
+    background-color: #0c6b0b;
+    color: #0f0f0f;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 80%;
+    height: 10%;
+    box-shadow: 0 0 10px black;
+}
+
+.close-menu:hover,
+.close-menu:focus{
+    background-color: #b1080c;
+    color: #afbb1b;
+    text-decoration:none;
+    cursor: pointer;
+    box-shadow: 0 0 10px #0c6b0b;
 }
