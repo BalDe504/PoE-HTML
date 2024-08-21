@@ -7,6 +7,7 @@ background-size: cover;
 
 .bottom_bar{
     position: absolute;
+    height: auto;
     bottom:0px;
     left:0px;
     width:100%;
@@ -17,11 +18,13 @@ background-size: cover;
 
 .xp_bar{
     width:50%;
-    height: 20px; 
+    height: 2vh; 
     background-color: brown;
     display:flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 10px 0 10px 5px black;
+    z-index: 1;
 }
 
 .xp_bar_interior{
@@ -34,14 +37,15 @@ background-size: cover;
 
 .left_side{
     width:25%;
-    height:200px;
+    height:15vh;
     background-color: brown;
     /*border-right: 5px black solid;
     border-top: 5px black solid;*/
-    box-shadow: 0px 0px 10px 5px black;
+    box-shadow: 0 0 10px 5px black;
     display: flex;
     justify-content: space-around;
     border-top-right-radius: 15px;
+    z-index: 2;
 }
 
 .menu{
@@ -56,11 +60,12 @@ background-size: cover;
     display:flex;
     justify-content: space-between;
     padding: 0px 5px 0px 5px;
+    
 }
 
 .skills{
     width: 25%;
-    height:200px;
+    height:15vh;
     background-color: brown;
     /*border-left: 5px black solid;
     border-top: 5px black solid;*/
@@ -68,6 +73,7 @@ background-size: cover;
     display: flex;
     flex-direction: column;
     border-top-left-radius: 15px;
+    z-index: 2;
 }
 
 .skills1{
@@ -106,6 +112,7 @@ background-size: cover;
     margin: 10px 5px 10px 5px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
+    box-shadow: 0 0 10px black;
 }
 
 .xp{
@@ -119,61 +126,26 @@ background-size: cover;
 
 .skill1{
     background-color: black;
-    height: 80%;
-    width:23%;
+    height: 6vh;
+    width: 6vh;
+    box-shadow: 0 0 10px black;
 }
 
 .skill2{
     background-color: black;
-    height: 80%;
-    width: 14%;
+    height: 6vh;
+    width: 6vh;
+    box-shadow: 0 0 10px black;
 }
 
 .shop_button{
-    width:40%;
-    height:40%;
+    width:50px;
+    height:50px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding:0;
-}
-
-.info{
-    width: 15%;
-    height:40%;
-    background-color: rgb(173, 114, 3);
-    color: #0f0f0f;
-    font-weight: bold;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.menu_button{
-    width:100%;
-    height:50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-}
-
-.button1{
-    width: 100%;
-    height: 100%;
-    background-color: #0c6b0b;
-    color: #0f0f0f;
-    font-weight: bold;
-    border-radius: 5px;
-    border: 1px solid black;
-}
-
-.button1:hover,
-.button1:active{
-    background-color: #b1080c;
-    color:#afbb1b;
-    cursor: pointer;
+    box-shadow: 0 0 10px black;
 }
 
 .shop_button1{
@@ -193,10 +165,64 @@ background-size: cover;
     cursor: pointer;
 }
 
+.eq_btn{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0;
+    box-shadow: 0 0 10px black;
+}
+
+.eq_btn1{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(173, 114, 3);
+    color: #0f0f0f;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.eq_btn1:hover,
+.eq_btn1:active{
+    background-color: #0f0f0f;
+    color:#afbb1b;
+    cursor: pointer;
+}
+
+.menu_button{
+    width:100%;
+    height:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.button1{
+    width: 100%;
+    height: 100%;
+    background-color: #0c6b0b;
+    color: #0f0f0f;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px black;
+}
+
+.button1:hover,
+.button1:active{
+    background-color: #b1080c;
+    color:#afbb1b;
+    cursor: pointer;
+}
+
 .modal1{
     display:none;
     position: fixed;
-    z-index: 1;
+    z-index: 4;
     left: 0;
     top: 0;
     width:100%;
@@ -228,8 +254,8 @@ background-size: cover;
     font-size: 28px;
     font-weight: bold;
     border-radius: 10px;
-    width: 80%;
-    height: 10%;
+    width: 200px;
+    height: 40px;
     box-shadow: 0 0 10px black;
 }
 
@@ -240,4 +266,186 @@ background-size: cover;
     text-decoration:none;
     cursor: pointer;
     box-shadow: 0 0 10px #0c6b0b;
+}
+
+.eq{
+    display:none;
+    position: absolute;
+    width:25%;
+    height:70vh;
+    background-color: brown;
+    float: right;
+    right: 0px;
+    bottom:16vh;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    box-shadow: 0 0px 10px 5px black;
+    z-index: 3;
+    flex-direction: column;
+}
+
+.items{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.item1{
+    height: 6vh;
+    width: 6vh;
+    background-color: #0f0f0f;
+    box-shadow: 0 0 10px black;
+}
+
+.item2{
+    height: 6vh;
+    width: 6vh;
+    background-color: #0f0f0f;
+    box-shadow: 0 0 10px black;
+}
+
+.item3{
+    height: 6vh;
+    width: 6vh;
+    background-color: #0f0f0f;
+    box-shadow: 0 0 10px black;
+}
+
+.item4{
+    height: 6vh;
+    width: 6vh;
+    background-color: #0f0f0f;
+    box-shadow: 0 0 10px black;
+}
+
+.item5{
+    height: 6vh;
+    width: 6vh;
+    background-color: #0f0f0f;
+    box-shadow: 0 0 10px black;
+}
+
+.item6{
+    height: 6vh;
+    width: 6vh;
+    background-color: #0f0f0f;
+    box-shadow: 0 0 10px black;
+}
+
+.item7{
+    height: 6vh;
+    width: 6vh;
+    background-color: #0f0f0f;
+    box-shadow: 0 0 10px black;
+}
+
+.item8{
+    height: 6vh;
+    width: 6vh;
+    background-color: #0f0f0f;
+    box-shadow: 0 0 10px black;
+}
+
+.item9{
+    height: 6vh;
+    width: 6vh;
+    background-color: #0f0f0f;
+    box-shadow: 0 0 10px black;
+}
+
+.item10{
+    height: 6vh;
+    width: 6vh;
+    background-color: #0f0f0f;
+    box-shadow: 0 0 10px black;
+}
+
+.item11{
+    height: 6vh;
+    width: 6vh;
+    background-color: #0f0f0f;
+    box-shadow: 0 0 10px black;
+}
+
+.item12{
+    height: 6vh;
+    width: 6vh;
+    background-color: #0f0f0f;
+    box-shadow: 0 0 10px black;
+}
+
+.item13{
+    height: 6vh;
+    width: 6vh;
+    background-color: #0f0f0f;
+    box-shadow: 0 0 10px black;
+}
+
+.item14{
+    height: 6vh;
+    width: 6vh;
+    background-color: #0f0f0f;
+    box-shadow: 0 0 10px black;
+}
+
+.equipped1{
+    width: 100%;
+    height:25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.equipped2{
+    margin-top: 15%;
+    width: 100%;
+    height:25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.weapon{
+    height: 19vh;
+    width: 11vh;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+.chest{
+    margin-top: 10%;
+    height: 19vh;
+    width: 11vh;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+.weapon2{
+    height: 19vh;
+    width: 11vh;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+.gloves{
+    height: 11vh;
+    width: 11vh;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+.boots{
+    height: 11vh;
+    width: 11vh;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
 }
