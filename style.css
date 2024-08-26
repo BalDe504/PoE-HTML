@@ -1,3 +1,15 @@
+@keyframes slideFromRight{
+
+    from{
+        transform: translateX(+50vh);
+    }
+    to{
+        transform: translateX(0);
+    }
+    
+}
+
+
 body{
 background-image: url("background.png");
 background-color: #0c6b0b;
@@ -271,6 +283,7 @@ background-size: cover;
 .eq{
     display:none;
     position: absolute;
+    overflow: auto;
     width:25%;
     height:70vh;
     background-color: brown;
@@ -282,6 +295,7 @@ background-size: cover;
     box-shadow: 0 0px 10px 5px black;
     z-index: 3;
     flex-direction: column;
+    animation: slideFromRight 0.4s ease;
 }
 
 .items{
