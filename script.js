@@ -15,11 +15,11 @@ close_menu.onclick = function(){
 
 eq_open.onclick = function(){
 
-    if(eq.style.display == "none"){
-        eq.style.display = "flex";
+    if(eq.style.display == "flex"){
+        eq.style.display = "none";
     }
     else{
-        eq.style.display = "none";
+        eq.style.display = "flex";
     }
     
 }
